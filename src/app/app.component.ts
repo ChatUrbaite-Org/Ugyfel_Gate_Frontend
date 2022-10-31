@@ -1,10 +1,19 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'Ugyfel-Gate-Frontend';
+export class AppComponent
+{
+  readonly ROOT_Url = ''
+  posts: any;
+  constructor(private http:HttpClient)
+  {
+    //is it okay to be gay?
+    //https://chaturbate.com/hot_girls00/
+
+  }
 }
