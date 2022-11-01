@@ -1,5 +1,5 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Person } from '../person';
+import { Person } from '../Interfaces/User';
 import {Component, Injectable} from '@angular/core';
 import { Observable } from 'rxjs';
 

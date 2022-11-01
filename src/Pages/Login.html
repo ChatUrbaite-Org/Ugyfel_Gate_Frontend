@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset = "UTF-8"/>
+  <title>ÜgyfélGATE</title>
+  <link rel="stylesheet" href="CSS/registrationStyle.scss">
+</head>
+<body>
+<main>
+  <table>
+    <ul>
+      <div class = "container">
+        <form action = "register" method = "post">
+          <h1>Register</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr/>
+          <label for = "realName"><b>Neve</b></label><br/>
+          <input type = "text" placeholder="Neve" name = "realName" id = "realName" required = "required"/><br/>
+
+          <label for = "username"><b>Felhasználónév</b></label><br/>
+          <input type = "text" placeholder="Felhasználónév" name = "username" id = "username" required = "required"/><br/>
+
+          <label for = "email"><b>Email</b></label><br/>
+          <input type = "text" placeholder="Email" name = "email" id = "email" required = "required"/><br/>
+
+          <label for = "psw"><b>Jelszó</b></label><br/>
+          <input type = "password" placeholder = "Jelszó" name = "psw" id = "psw" required = "required"/><br/>
+
+          <label for = "psw-repeat"><b>Jelszó újra</b></label><br/>
+          <input type = "password" placeholder = "Jelszó újra" name = "psw-repeat" id = "psw-repeat" required = "required"/><br/>
+
+          <label for = "birthplace"><b>Születési hely</b></label><br/>
+          <input type = "text" placeholder="Születési hely" name = "birthplace" id = "birthplace" required = "required"/><br/>
+
+          <label for = "birthdate"><b>Születési idő</b></label><br/>
+          <input type = "date" placeholder="Születési idő" name = "birthdate" id = "birthdate" required = "required"/><br/>
+
+          <label for = "sex"><b>Nem</b></label><br/>
+          <input type = "text" placeholder="Neme" name = "sex" id = "sex" required = "required"/><br/>
+
+          <label for = "isMom"><b>Gyereke van?</b></label><br/>
+          <input type = "checkbox" placeholder="Van-e gyermeke?" name = "username" id = "isMom" required = "required" onclick = "isMom()"/><br/>
+
+
+          <label for = "nationality"><b>Nemzetisége</b></label><br/>
+          <input type = "text" placeholder="Nemzetiség" name = "nationality" id = "nationality" required = "required"/><br/>
+          <hr/>
+
+          <button type = "submit" class = "registerbtn">Regisztráció</button>
+        </form>
+      </div>
+
+      <div class = "container signin">
+        <p>Already have an account? <a href = "#">Sign in</a>.</p>
+      </div>
+    </ul>
+  </table>
+</main>
+</body>
+<script type = "text/javascript">
+  function isMom(){
+    var checkBox = document.getElementById("myCheck");
+    var text = document.getElementById("text");
+
+    if(checkBox.checked == true){
+      text.style.display = "block";
+    }else{
+      text.style.display = "none";
+    }
+  }
+</script>
+</html>

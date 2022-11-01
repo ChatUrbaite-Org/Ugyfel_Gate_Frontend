@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+html{
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+body{
+  justify-items: center;
+  display: flex;
+  background-attachment: fixed;
+  background-clip: content-box;
+  background-attachment: scroll;
+  background-color: #F4978E ;
+
+}
+div{
+  background-color: aquamarine;
+  border-radius: 15px;
+  text-align: center;
+
+}
+
+section{
+  background-color: burlywood;
+  border-radius: 15px;
+}
+footer{
+  width: 100%;
+  justify-items: center;
+}

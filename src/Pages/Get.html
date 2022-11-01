@@ -1,0 +1,35 @@
+<h1>Angular HTTP GET</h1>
+<button (click)='getUsers()'>Get Users</button>
+<div *ngFor='let user of (users) | async'>
+  {{ user | json}}
+</div>
+<br>
+<button (click)='getLocations()'>Get Locations</button>
+<div *ngFor='let location of (locations) | async'>
+  {{ location | json}}
+</div>
+<br>
+<button (click)='getOrganisations()'>Get Organisations</button>
+<div *ngFor='let org of (organisations) | async'>
+  {{ org | json}}
+</div>
+<br>
+<button (click)='getID_Cards()'>Get Id Cards</button>
+<div *ngFor='let idc of (id_cards) | async'>
+  {{ idc | json}}
+</div>
+<br>
+<button (click)='getLocation_Cards()'>Get Location Cards</button>
+<div *ngFor='let locationCard of (location_cards) | async'>
+  {{ locationCard | json}}
+</div>
+<br>
+<button (click)='getDrivers_Licenses()'>Get Drivers Licenses</button>
+<div *ngFor='let driversLicense of (driversLicenses) | async'>
+  {{ driversLicense | json}}
+</div>
+<br>
+<button (click)='getMessages()'>Get Messages</button>
+<div *ngFor='let message of (messages) | async'>
+  {{ message | json}}
+</div>
