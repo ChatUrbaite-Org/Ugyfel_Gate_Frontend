@@ -13,7 +13,7 @@
         <form action = "register" method = "post">
           <h1>Register</h1>
           <p>Please fill in this form to create an account.</p>
-          <hr/>
+          <hr>
           <label for = "realName"><b>Neve</b></label><br/>
           <input type = "text" placeholder="Neve" name = "realName" id = "realName" required = "required"/><br/>
 
@@ -44,29 +44,17 @@
 
           <label for = "nationality"><b>Nemzetisége</b></label><br/>
           <input type = "text" placeholder="Nemzetiség" name = "nationality" id = "nationality" required = "required"/><br/>
-          <hr/>
+          <hr>
 
           <button type = "submit" class = "registerbtn">Regisztráció</button>
         </form>
       </div>
 
       <div class = "container signin">
-        <p>Already have an account? <a href = "#">Sign in</a>.</p>
+        <p>Van felhasználója?<br><a href = "Login.html">Bejelentkezés</a></p>
       </div>
     </ul>
   </table>
 </main>
 </body>
-<script type = "text/javascript">
-  function isMom(){
-    var checkBox = document.getElementById("myCheck");
-    var text = document.getElementById("text");
-
-    if(checkBox.checked == true){
-      text.style.display = "block";
-    }else{
-      text.style.display = "none";
-    }
-  }
-</script>
 </html>
