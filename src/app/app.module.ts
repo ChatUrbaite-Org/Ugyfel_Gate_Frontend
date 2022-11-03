@@ -14,13 +14,16 @@ import {ID_Card} from "../Interfaces/ID_Card";
 import {Location_Card} from "../Interfaces/Location_Card";
 import {DriversLicenses} from "../Interfaces/DriversLicenses";
 import {Messages} from "../Interfaces/Messages";
+import {AuthenticationService} from "../TS/authentication-service.component";
+
 const appRoutes: Routes = [
   { path: 'registration', component: AppRegistrationcomponent },
   { path: 'login', component: AppLogincomponent },
 ];
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AuthenticationService
   ],
   imports: [
     BrowserModule,

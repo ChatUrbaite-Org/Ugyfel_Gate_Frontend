@@ -13,7 +13,7 @@
         <form>
           <label for = "username"><b>Felhasználónév:</b></label><br><br>
           <input type = "text" placeholder="Felhasználónév" name = "username" id = "username" required #username><br><br>
-          <button type = "submit" (click)="logIn(username)">Belépés</button>
+          <button type = "submit" (click) = "logIn()">Belépés</button>
           <hr>
         </form>
       </main>
@@ -22,5 +22,6 @@
     <div class = "noacc">
       <p>Nincs felhasználója? <br><a href = "Registration.html">Regisztráció</a></p>
     </div>
+    <script src="../TS/authentication-service.component.ts"></script>
   </body>
 </html>
