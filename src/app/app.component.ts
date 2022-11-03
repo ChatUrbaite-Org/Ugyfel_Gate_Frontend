@@ -16,7 +16,7 @@ import {HttpClient} from "@angular/common/http";
 })
 export class AppComponent {
   title = 'Ügyfél Kapu';
-  readonly ROOT_Url = 'http://127.0.0.1:8080/Ugyfel_Gate_Rest_war_exploded/rest/get'
+  readonly ROOT_Url = 'http://127.0.0.1:8080/rest/api/get'
   readonly ROOT_Url0 = 'http://jsonplaceholder.typicode.com'
   users: Observable<User[]> | undefined;
   locations : Observable<Locations[]> | undefined;
